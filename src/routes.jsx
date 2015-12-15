@@ -6,15 +6,15 @@ var Route = ReactRouter.Route;
 
 var WebSite = require('./components/main');
 var Introduction = require('./components/introduction');
+var Resources = require('./components/resources');
+var Hiring = require('./components/hiring');
 
 module.exports = (
   <Router history={new HashHistory}>
     <Route path="/" component={WebSite}>
-      <Route path="1" component={Introduction} />
+      <Route path="introduction" component={Introduction} />
+      <Route path="resources" component={Resources} />
+      <Route path="hiring" component={Hiring} />
     </Route>
   </Router>
 )
-
-      // <Route path="1" component={Introduction} />
-      // <Route path="2" component={LearningMaterials} />
-      // <Route path="3" component={InterviewQuestions} />

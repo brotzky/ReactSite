@@ -50,7 +50,7 @@ function bundle() {
     .bundle()
     .on('error', notify)
     .pipe(source('script.min.js'))
-    .pipe(streamify(uglify()))
+    // .pipe(streamify(uglify()))
     .pipe(gulp.dest('./build/scripts'))
 }
 bundler.on('update', bundle)
