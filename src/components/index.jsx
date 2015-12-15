@@ -1,6 +1,4 @@
 var React = require('react');
-var Api = require('../utils/api');
-var Paper = require('./paper');
 
 module.exports = React.createClass({
   render: function() {

@@ -1,3 +1,8 @@
+/**
+ * Fetch library for Async calls
+ * Source: data directory in root
+ */
+
 var Fetch = require('whatwg-fetch');
 
 module.exports = {

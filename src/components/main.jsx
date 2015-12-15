@@ -1,6 +1,6 @@
 var React = require('react');
-var Header = require('./header');
 var WebsiteData = require('../stores/website-store');
+var Header = require('./header');
 
 module.exports = React.createClass({
   getInitialState: function() {
@@ -11,12 +11,11 @@ module.exports = React.createClass({
   },
   componentDidMount: function() {
     WebsiteData.getData()
-      .then(function(){
-        this.setState({username: WebsiteData});
+      .then(function(data){
+        this.setState({username: WebsiteData.website});
       }.bind(this));
   },
   render: function() {
-    console.log(this.state);
     return (
       <div>
         <Header />

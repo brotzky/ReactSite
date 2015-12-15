@@ -6,11 +6,13 @@
 var React = require('react');
 var WebsiteData = require('../stores/website-store');
 var Introduction = require('./introduction');
+var Resources = require('./resources');
+var Hiring = require('./hiring');
 
 module.exports = React.createClass({
   render: function() {
     return (
-      <div>
+      <div className="paper">
         <p>This is the containing paper</p>
       </div>
     );
