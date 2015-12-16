@@ -3,6 +3,8 @@
  * Main component that contains subcomponenets
  */
 
+"use strict";
+
 var React = require('react');
 var WebsiteData = require('../stores/website-store');
 var Introduction = require('./introduction');

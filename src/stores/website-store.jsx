@@ -3,6 +3,8 @@
  * Initial call for website data
  */
 
+"use strict";
+
 var Api = require('../utils/api');
 var Reflux = require('reflux');
 

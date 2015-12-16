@@ -3,6 +3,8 @@
  * Source: data directory in root
  */
 
+"use strict";
+
 var Fetch = require('whatwg-fetch');
 
 module.exports = {

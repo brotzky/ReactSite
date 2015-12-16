@@ -1,3 +1,12 @@
+/**
+ * Root component ---- /
+ *
+ * This is the highest level componenet that holds
+ * all other children
+ */
+
+"use strict";
+
 var React = require('react');
 var Reflux = require('reflux');
 var WebsiteData = require('../stores/website-store');
