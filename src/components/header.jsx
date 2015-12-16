@@ -6,10 +6,8 @@ module.exports = React.createClass({
   render: function() {
     return (
       <div className="header">
-        <Link to='/'>Home</Link>
-        <Link to='/introduction'>Introduction</Link>
-        <Link to='/resources'>Resources</Link>
-        <Link to='/hiring'>Hiring</Link>
+        <Link classNameActive="active" to='/'>1. guide</Link>
+        <Link classNameActive="active" to='/resources'>2. resources</Link>
       </div>
     );
   }

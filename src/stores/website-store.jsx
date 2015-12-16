@@ -12,6 +12,10 @@ module.exports = Reflux.createStore({
     return Api.get('../../data/data.json')
       .then(function(data){
         this.website = data.webapp
+        this.triggerChange();
       }.bind(this));
+  },
+  triggerChange: function(){
+    this.trigger('change', this.website)
   }
 });
